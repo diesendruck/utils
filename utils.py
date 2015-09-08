@@ -1,7 +1,7 @@
 # Document to collect useful, custom-written functions.
 
 def sym_matrix(matrix, part="upper"):
-    """Makes square, symmetric matrix, from matrix and upper/lower flag.
+    """Returns a symmetric matrix, from a square matrix and a triangle flag.
     
     Requires: import numpy as np
     
