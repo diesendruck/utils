@@ -37,4 +37,29 @@ def sym_matrix(matrix, part="upper"):
         print("Give a good 'part' definition, e.g. 'upper' or 'lower'.")
     
     return m
-        
+
+def sample_adj_matrix(n, p):
+    """Builds random adjacency matrix.
+
+    Creates nxn adjacency matrix (1s and 0s) representing edges between nodes.
+    Each edge is sampled as an independent Bernoulli random variable with
+    probability p.
+
+    Args:
+        n: Number of nodes, and size of matrix adjacency matrix.
+        p: Bernoulli probabiity for each edge.
+
+    Returns:
+        adj: Adjacency matrix.
+    """
+    adj = np.asarray([[rbern(0.5) for j in range(n)] for i in range(n)])
+    adj = sym_matrix(adj)
+    np.fill_diagonal(adj, 0)
+    return adj
+
+def check_symmetry(q): return("Symmetry: ", (q.transpose() == q).all())
+
+def rbern(p): 
+    r = np.random.binomial(1, p)
+    return r
+
