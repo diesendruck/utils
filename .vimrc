@@ -11,6 +11,7 @@ set visualbell
 
 " Quick save mapping
 noremap <silent> ;w :update<CR>
+noremap qq :q!<CR>
 
 " Don't show numbers
 set nonumber
@@ -29,7 +30,7 @@ set expandtab
 set ruler
 
 " Show filename in status bar
-set statusline+=%F
+set statusline=%F
 
 " Slimux config
 "
@@ -39,3 +40,8 @@ vmap <Leader>l :SlimuxREPLSendSelection<CR>
 map <Leader>a :SlimuxShellLast<CR>
 map <leader>k :slimuxsendkeyslast<cr>
 
+" Disable pymode/rope
+" 
+let g:pymode_rope = 0 
+
+let g:pymode_warnings = 1

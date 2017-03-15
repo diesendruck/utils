@@ -12,8 +12,11 @@ bindkey "[C" forward-word
 alias ll="ls -l"
 alias ..="cd .."
 alias zshrc="source ~/.zshrc"
-alias tfpython="source ~/tensorflow/bin/activate; echo 'Using tensorflow virtualenv for Python...'"
-alias genad="cd ~/Google\ Drive/generative_adversarial/"
+alias tf1="source ~/tensorflow-1.0.0/bin/activate; echo 'Using tensorflow 1.0.0 virtualenv for Python...'"
+alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
+alias tmn="tmux new -s "
+alias tma="tmux a -t "
+alias tmk="tmux kill-session -t "
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
