@@ -17,6 +17,7 @@ alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
 alias tmn="tmux new -s "
 alias tma="tmux a -t "
 alias tmk="tmux kill-session -t "
+alias tml="tmux ls"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
