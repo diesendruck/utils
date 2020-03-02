@@ -19,6 +19,13 @@ alias tma="tmux a -t "
 alias tmk="tmux kill-session -t "
 alias tml="tmux ls"
 
+# Other
+#alias ls="ls -l --color=auto -F"
+#alias ll="ls -l --color=auto -F"
+alias virc="vi ~/.zshrc"
+alias sourcerc="source ~/.zshrc"
+#PS1='\w\$ '
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=100000
