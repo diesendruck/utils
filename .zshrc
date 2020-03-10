@@ -9,8 +9,7 @@ bindkey -e
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
-alias ll="ls -l"
-alias ..="cd .."
+
 alias zshrc="source ~/.zshrc"
 alias tf1="source ~/tensorflow-1.0.0/bin/activate; echo 'Using tensorflow 1.0.0 virtualenv for Python...'"
 alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
@@ -20,6 +19,8 @@ alias tmk="tmux kill-session -t "
 alias tml="tmux ls"
 
 # Other
+alias ll="ls -l"
+alias ..="cd .."
 #alias ls="ls -l --color=auto -F"
 #alias ll="ls -l --color=auto -F"
 alias virc="vi ~/.zshrc"
