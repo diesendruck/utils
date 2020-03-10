@@ -6,10 +6,10 @@ syntax on
 colorscheme codeschool 
 set background=dark
 set hlsearch
-inoremap ;; <Esc>l
 set visualbell
 
 " Quick save mapping
+inoremap ;; <Esc>l
 noremap <silent> ;w :update<CR>
 noremap qq :q!<CR>
 
