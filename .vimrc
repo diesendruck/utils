@@ -6,7 +6,8 @@ syntax on
 colorscheme codeschool 
 set background=dark
 set hlsearch
-set visualbell
+"set visualbell
+set belloff=all
 
 " Quick save mapping
 inoremap ;; <Esc>l
