@@ -23,9 +23,22 @@ alias ll="ls -l"
 alias ..="cd .."
 #alias ls="ls -l --color=auto -F"
 #alias ll="ls -l --color=auto -F"
-alias virc="vi ~/.zshrc"
-alias sourcerc="source ~/.zshrc"
 #PS1='\w\$ '
+
+alias zshrc="vi ~/.zshrc"
+alias vimrc="vi ~/.vimrc"
+alias ohmyzsh="vi ~/.oh-my-zsh"
+export VIRTUAL_ENV_DISABLE_PROMPT=
+
+# Git aliases.
+alias gb="git branch -avv"
+alias gs="git status"
+alias gc="git checkout"
+
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+
+
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
