@@ -34,6 +34,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 alias gb="git branch -avv"
 alias gs="git status"
 alias gc="git checkout"
+alias isgit="git rev-parse --is-inside-work-tree"
 
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
