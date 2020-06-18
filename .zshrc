@@ -9,26 +9,11 @@ bindkey -e
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
-
+# RC aliases.
 alias zshrc="source ~/.zshrc"
-alias tf1="source ~/tensorflow-1.0.0/bin/activate; echo 'Using tensorflow 1.0.0 virtualenv for Python...'"
-alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
-alias tmn="tmux new -s "
-alias tma="tmux a -t "
-alias tmk="tmux kill-session -t "
-alias tml="tmux ls"
-
-# Other
-alias ll="ls -l"
-alias ..="cd .."
-#alias ls="ls -l --color=auto -F"
-#alias ll="ls -l --color=auto -F"
-#PS1='\w\$ '
-
 alias zshrc="vi ~/.zshrc"
 alias vimrc="vi ~/.vimrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
-export VIRTUAL_ENV_DISABLE_PROMPT=
 
 # Git aliases.
 alias gb="git branch -avv"
@@ -36,9 +21,30 @@ alias gs="git status"
 alias gc="git checkout"
 alias isgit="git rev-parse --is-inside-work-tree"
 
+# Linting aliases.
+alias pep="autopep8 -da"
+alias dopep="autopep8 -ia"
+alias flake="flake8"
+
+# Tmux aliases.
+alias tmn="tmux new -s "
+alias tma="tmux a -t "
+alias tmk="tmux kill-session -t "
+alias tml="tmux ls"
+
+# Navigation aliases.
+alias ll="ls -l"
+alias ..="cd .."
+#alias ls="ls -l --color=auto -F"
+#alias ll="ls -l --color=auto -F"
+#PS1='\w\$ '
+alias tf1="source ~/tensorflow-1.0.0/bin/activate; echo 'Using tensorflow 1.0.0 virtualenv for Python...'"
+alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
+
+# Misc aliases.
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-
+export VIRTUAL_ENV_DISABLE_PROMPT=
 
 
 # Lines configured by zsh-newuser-install
