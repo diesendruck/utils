@@ -43,7 +43,8 @@ alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
 
 # Misc aliases.
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias countsubdirs="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c 'echo \"{} : $(find \"{}\" -type f | wc -l)\" file\(s\)' \;"
+alias subdircounts='find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '\''echo "{} : $(find "{}" -type f | wc -l)" file\(s\)'\'' \;'
+
 
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
