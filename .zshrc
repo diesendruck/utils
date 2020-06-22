@@ -38,8 +38,6 @@ alias ..="cd .."
 #alias ls="ls -l --color=auto -F"
 #alias ll="ls -l --color=auto -F"
 #PS1='\w\$ '
-alias tf1="source ~/tensorflow-1.0.0/bin/activate; echo 'Using tensorflow 1.0.0 virtualenv for Python...'"
-alias dcgan="cd ~/Google\ Drive/0_GAN/gan/dcgan/DCGAN-tensorflow"
 
 # Misc aliases.
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
