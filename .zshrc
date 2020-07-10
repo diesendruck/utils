@@ -33,7 +33,7 @@ alias tmk="tmux kill-session -t "
 alias tml="tmux ls"
 
 # Navigation aliases.
-alias ll="ls -l"
+alias ll="ls -la"
 alias ..="cd .."
 #alias ls="ls -l --color=auto -F"
 #alias ll="ls -l --color=auto -F"
