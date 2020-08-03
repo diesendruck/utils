@@ -42,7 +42,7 @@ alias ..="cd .."
 # Misc aliases.
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias subdircounts='find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '\''echo "{} : $(find "{}" -type f | wc -l)" file\(s\)'\'' \;'
-alias sortbysize='sudo du -x -h / | sort -h | tail -40'
+alias sortbysize='sudo du -x -h . | sort -h | tail -40'
 
 
 export VIRTUAL_ENV_DISABLE_PROMPT=
