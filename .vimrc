@@ -3,7 +3,7 @@ filetype plugin indent on
 execute pathogen#infect()
 
 syntax on
-colorscheme codeschool 
+colorscheme delek 
 set background=dark
 set hlsearch
 "set visualbell
