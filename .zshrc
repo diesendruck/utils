@@ -9,6 +9,9 @@ bindkey -e
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
+# Get Oh My Zsh
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # RC aliases.
 alias zshrc="source ~/.zshrc"
 alias zshrc="vi ~/.zshrc"
