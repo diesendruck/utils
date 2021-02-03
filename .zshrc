@@ -50,8 +50,9 @@ alias sortbysize='sudo du -x -h . | sort -h | tail -40'
 # grep -rli 'old-word' * | xargs -I@ sed -i '' 's/old-word/new-word/g' @
 
 
-export VIRTUAL_ENV_DISABLE_PROMPT=
-
+#export VIRTUAL_ENV_DISABLE_PROMPT=
+# Get Conda activate to work. (https://stackoverflow.com/a/65183109/2646792)
+#source ~/anaconda3/etc/profile.d/conda.sh
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
