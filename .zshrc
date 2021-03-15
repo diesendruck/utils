@@ -19,9 +19,9 @@ alias vimrc="vi ~/.vimrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 
 # Git aliases.
-alias gb="git branch -avv"
+alias gb="git branch -av"
 alias gs="git status"
-alias gc="git checkout"
+alias gcm="git checkout master"
 alias isgit="git rev-parse --is-inside-work-tree"
 
 # Linting aliases.
