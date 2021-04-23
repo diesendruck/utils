@@ -17,8 +17,8 @@ if __name__ == '__main__':
   args = argparser()
   
   time = datetime.now().strftime('%Y%m%d%H%M%S')
-  args.out_dir = os.path.join(args.out_dir, time)
-  Path(args.out_dir).mkdir(parents=True, exist_ok=True)
+  args.output_dir = os.path.join(args.output_dir, time)
+  Path(args.output_dir).mkdir(parents=True, exist_ok=True)
   
   main(args)
   
