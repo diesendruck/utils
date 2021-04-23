@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-def argparse():
+def argparser():
   parser = argparse.ArgumentParser()
   parser.add_argument('--input', type=str, default='')
   parser.add_argument('--output_dir', type=str, default='output')
