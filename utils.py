@@ -4,6 +4,9 @@
 
 import numpy as np
 
+from scipy.spatial.distance import pdist, cdist
+
+
 def check_symmetry(q): return("Symmetry: ", (q.transpose() == q).all())
 
 def ising_likelihood(z, theta):
@@ -135,4 +138,29 @@ def rbern(p):
     r = np.random.binomial(1, p)
     return r
 
+def energy_distance(x, y, use_tf=False, method='linear'):
+    """Distances are euclidean.
+    See: https://github.com/syrte/ndtest/blob/master/ndtest.py
+    """
+    # TODO: Do tf version.
+    if use_tf == True:
+        sys.exit('TensorFlow version not complete.')
 
+    dx, dy, dxy = pdist(x), pdist(y), cdist(x, y)
+    n, m = len(x), len(y)
+    if method == 'log':
+        dx, dy, dxy = np.log(dx), np.log(dy), np.log(dxy)
+    elif method == 'gaussian':
+        raise NotImplementedError
+    elif method == 'linear':
+        pass
+    else:
+        raise ValueError
+
+    # Energy is 2 * E[d(x, y)] - E[d(x, x) - E[d(y, y)].
+    # Why the 2nd and 3rd factors of 2? dx and dy are computed with scipy's pdist,
+    # which only returns upper triangular values of pairwise distance matrix.
+    # Full computation of dx computes the full matrix, i.e. n**2 values, so the 
+    # upper triangle must be doubled.
+    z = 2.0 * dxy.sum() / (n * m) - 2.0 * dx.sum() / n**2 - 2.0 * dy.sum() / m**2
+    return z
