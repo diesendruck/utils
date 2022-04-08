@@ -48,6 +48,7 @@ alias subdircounts='find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '\''echo 
 alias sortbysize='sudo du -x -h . | sort -h | tail -40'
 # Replace text recursively
 # grep -rli 'old-word' * | xargs -I@ sed -i '' 's/old-word/new-word/g' @
+alias rmpycache="find . | grep -E '(__pycache__|\.pyc|\.pyo$)' | xargs rm -rf"
 
 
 #export VIRTUAL_ENV_DISABLE_PROMPT=
